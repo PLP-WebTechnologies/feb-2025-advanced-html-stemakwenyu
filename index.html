@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Week 2 Assignment</title>
+</head>
+
+<body>
+    <h1>Advanced HTML5 Elements and Forms</h1>
+
+    <h2>Ordered List (Roman Numerals)</h2>
+    <ol type="I">
+        <li>Software Engineering</li>
+        <li>Internet of Things</li>
+        <li>Robotics</li>
+        <li>Networking</li>
+        <li>Database Administration</li>
+    </ol>
+
+    <h2>Image from Pexels</h2>
+    <img src="https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Cute Dog" width="400">
+    <p>My lovely pet, kyle</p>
+
+    <h2>Contact Information</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Stephen Maingi</td>
+                <td>1699 Marrel, Bungoma, Kenya</td>
+                <td>555-123-4567</td>
+                <td>stephen.maingi@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Emmy Ndemo</td>
+                <td>46 Yoani, Kenya</td>
+                <td>555-987-6543</td>
+                <td>emmy.ndemo@gmail.com.com</td>
+            </tr>
+            <tr>
+                <td>Peter Jones</td>
+                <td>789 Pine Ln, Kampala, UG</td>
+                <td>555-555-1111</td>
+                <td>peter.jones@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Mary Brown</td>
+                <td>101 Elm Rd, KIsumu, Kenya</td>
+                <td>555-222-3333</td>
+                <td>mary.brown@gmail.com</td>
+            </tr>
+            <tr>
+                <td>David Kiptum</td>
+                <td>222 Maple Dr, Eldoret, Kenya</td>
+                <td>555-444-5555</td>
+                <td>david.Kiptum@gmail.com</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Registration Form</h2>
+    <form action="#" method="post">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required><br><br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required><br><br>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob"><br><br>
+
+        <label for="newsletter">Subscribe to Newsletter:</label>
+        <input type="checkbox" id="newsletter" name="newsletter" value="subscribe"><br><br>
+
+        <input type="submit" value="Register">
+    </form>
+
+</body>
+
+</html>
