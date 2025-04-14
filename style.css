@@ -1,0 +1,53 @@
+/* Element selector */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ID selector */
+
+#main-heading {
+    color: #2c3e50;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 2px solid #ccc;
+}
+
+
+/* Class selector */
+
+.intro {
+    font-size: 18px;
+    margin: 20px auto;
+    width: 80%;
+    line-height: 1.6;
+}
+
+
+/* Style an image */
+
+.hero-image {
+    display: block;
+    margin: 30px auto;
+    width: 60%;
+    border: 5px solid #3498db;
+    border-radius: 10px;
+}
+
+
+/* Another class with margin, padding, and border */
+
+.card {
+    background-color: white;
+    width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
