@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        nav a {
+            color: #fff;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .container {
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            gap: 1.5rem;
+            padding: 2rem;
+        }
+        
+        .main-content {
+            background-color: #f4f4f4;
+            padding: 1.5rem;
+        }
+        
+        .sidebar {
+            background-color: #e0e0e0;
+            padding: 1.5rem;
+        }
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+        /* Media Queries */
+        
+        @media (max-width: 900px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            nav a {
+                margin: 0.5rem 0;
+            }
+        }
+        
+        @media (max-width: 600px) {
+            header {
+                text-align: center;
+            }
+            nav {
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">MySite</div>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="main-content">
+            <h2>Main Content</h2>
+            <p>This is the main content area. It expands more than the sidebar to accommodate detailed information.</p>
+        </div>
+
+        <div class="sidebar">
+            <h3>Sidebar</h3>
+            <p>This sidebar contains secondary content such as links or widgets.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Stephen'sSite. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
